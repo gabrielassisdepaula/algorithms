@@ -17,7 +17,7 @@ class PrefixSum2D:
                 self.prefix_sum[row+1][col+1] = row_prefix_sum + above
     
 
-    def sumRegion(self, row1: int, col1: int, row2: int, col2: int) -> int:
+    def sum_region(self, row1: int, col1: int, row2: int, col2: int) -> int:
         # all indexation accounting for padding zeros
         # get bottom right prefix sum 
         bottom_right = self.prefix_sum[row2+1][col2+1]
